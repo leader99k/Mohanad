@@ -9,13 +9,13 @@ subscriber =1689826750
 @bot.message_handler(commands=["start"])
 def start(message):
 	if not str(message.chat.id) == '1689826750':
-		bot.reply_to(message, "You cannot use the bot to contact developers to purchase a bot subscription @H33OO")
+		bot.reply_to(message, "You cannot use the bot to contact developers to purchase a bot subscription @MrMohnad")
 		return
 	bot.reply_to(message,"Send the file now \n ارسل الملف الان")
 @bot.message_handler(content_types=["document"])
 def main(message):
 	if not str(message.chat.id) == '1689826750':
-		bot.reply_to(message, "You cannot use the bot to contact developers to purchase a bot subscription @H33OO")
+		bot.reply_to(message, "You cannot use the bot to contact developers to purchase a bot subscription @MrMohnad")
 		return
 	dd = 0
 	live = 0
@@ -32,7 +32,7 @@ def main(message):
 				current_dir = os.getcwd()
 				for filename in os.listdir(current_dir):
 					if filename.endswith(".stop"):
-						bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text='𝗦𝗧𝗢𝗣𝗣𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @H33OO')
+						bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text='𝗦𝗧𝗢𝗣𝗣𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @MrMohnad')
 						os.remove('stop.stop')
 						return
 				try:
@@ -106,7 +106,7 @@ def main(message):
 				time.sleep(20)
 	except Exception as e:
 		print(e)
-	bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text='𝗕𝗘𝗘𝗡 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @H33OO')
+	bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text='𝗕𝗘𝗘𝗡 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @MrMohnad')
 @bot.callback_query_handler(func=lambda call: call.data == 'stop')
 def menu_callback(call):
 	with open("stop.stop", "w") as file:
