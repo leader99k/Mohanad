@@ -84,7 +84,7 @@ def main(message):
 				stop=types.InlineKeyboardButton(f"[ 𝐒𝐓𝐎𝐏 ]", callback_data='stop')
 				mes.add(cm1,status, cm3, cm4, cm5, stop)
 				bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text='''Wait for processing 
-𝒃𝒚 ➜ @H33OO ''', reply_markup=mes)
+𝒃𝒚 ➜ @MrMohnad ''', reply_markup=mes)
 				msg = f'''◆ 𝑪𝑨𝑹𝑫  ➜ {cc} 
 ◆ 𝑺𝑻𝑨𝑻𝑼𝑺 ➜ 𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱  ✅ 
 ◆ 𝑹𝑬𝑺𝑼𝑳𝑻 ➜ #Approved
@@ -95,7 +95,7 @@ def main(message):
 ◆ 𝑩𝑨𝑵𝑲 ➜ {bank}
 ◆ 𝑼𝑹𝑳 ➜ {url}
 ━━━━━━━━━━━━━━━━━
-◆ 𝑩𝒀: @H33OO
+◆ 𝑩𝒀: @MrMohnad
 ◆𝑷𝑹𝑶𝑿𝒀𝑺: 𝑷𝑹𝑶𝑿𝒀 𝑳𝑰𝑽𝑬 ✅ '''
 				print(last)
 				if "live" in last or 'Approved' in last:
